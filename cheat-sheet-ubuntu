@@ -1,0 +1,111 @@
+Commands
+
+HOW DO I ACCESS MY HOME DIRECTORY FOM CONV1/2???
+
+ssh -K -X meyerbe@convection
+!!! cannot access cond1/2 from convection and conv1/2 from condensation
+>> set as ´conv´
+alias cond='ssh -X -Y -K meyerbe@condensation.biocmplx.nbi.dk'
+
+
+-- Cheat Sheet Ubuntu --
+find linux version in use: cat /etc/*-release
+64-bit (architecture: x86-64)
+Operating System: CentOS Linux 7 (Core)
+hostnamectl >> gives information about machine
+
+
+Software Olge Henneberg
+/nbi/ac/conv1/henneb/software/cp_tracer_git_fin1
+
+
+ETH VPN
+https://www.isg.inf.ethz.ch/HelpRemoteAccess
+
+=== Commands ===
+clear window: ctrl + l
+open new window: 	ctrl + shift + N
+open new tab: 		ctrl + shift + T
+change btw. tabs: 	ctrl + page up
+copy: 			ctrl + shift + C
+paste: 			ctrl + shift + V
+
+open PDF file		xdg-open pdffile.pdf
+			gvfs-open pdffile.pdf
+
+ctrl-d 	exit a terminal, same as typing `exit`
+ctrl-l 	clears the screen, same as `clear`
+ctrl-c 	breaks/cancels an ongoing operation
+ctrl-z 	pauses (stops) an ongoing operation. Type `fg` (foreground) to resume it or `bg` (background) to continue the process in the backgroun
+
+ls -l	show only directories
+ls -l	long listing format 
+ls -g	like -l but without owner
+ls -s 	output size of each file
+
+
+-- execute shell files *.sh --
+chmod	change access permissions to file szstem objects
+
+
+-- bashrc etc --
+The main difference with shell config files is that some are only read by "login" shells (eg. when you login from another host, or login at the text console of a local unix machine). these are the ones called, say, .login or .profile or .zlogin (depending on which shell you're using).
+
+Then you have config files that are read by "interactive" shells (as in, ones connected to a terminal (or pseudo-terminal in the case of, say, a terminal emulator running under a windowing system). these are the ones with names like .bashrc, .tcshrc, .zshrc, etc.
+
+bash complicates this in that .bashrc is only read by a shell that's both interactive and non-login, so you'll find most people end up telling their .bash_profile to also read .bashrc with something like
+
+
+=== netCDF ===
+ncBrowse
+
+ncdump		show contents of netCDF files (CDL description)
+ncdump -h 		show only headers
+ncgen		generates a binarz netCDF file from ASCII input file (CFL format) (opposite of ncdump)
+nccopy		copy a netCDF file, changing forma, size, compression etc
+
+
+-- CDO --
+CDO = climate data operators
+https://code.mpimet.mpg.de/projects/cdo
+supported data formats: netCDF3/4, GRI, SERVICE, EXTRA, IEG
+scripting interface for Ruby and Python
+
+commands:
+find domain size		cdo griddes example_dataset.nc
+find number of timesteps	cdot ntime example_dataset.nc
+
+-- ncview --
+ncview name_data_file.nc
+
+
+
+=== Darwin Data ===
+/conv2/haerter/sharedData/Darwin_Radar
+
+existing data sets:
+2001: (Oct), Nov, Dec
+2002: Jan, Feb, March, April, Oct, Nov, Dec
+2015: Jan, Feb, March, April, (Mai), Nov, Dec
+2016: Jan, Feb, March, April, Oct, Nov, Dec
+2017: Jan, Feb, March, April
+
+-- Data --
+x = 117, y = 117 (units: meters), gridsize  = 13689
+x:standard_name = "easthward_distance" 
+y:standard_name = "northward_distance" 
+
+time
+time = 144
+units = "seconds since 1970-01-01 00:00" ;
+standard_name = "time"
+time_coverage_resolution = "00:10:00" >> total time coverage per file = 1440min = 24h
+
+radar_estimated_rain_rate:units = "mm/hr"
+standard_name = "radar_estimated_rain_rate" ;
+short_name = "RRR"
+
+
+>> how to find good case-study with steady-state/calm environment, deep convection, cold pools?
+	>> possible to connect all files of a year and look at cumulated rain (qc_exist time-series)?
+>> plot map of continent, to see coast line

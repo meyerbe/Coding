@@ -1,0 +1,59 @@
+Danish Center for Climate Computing (DC3)
+
+Webpage: http://nutrik.dk/dc3.html
+http://www.hpc.ku.dk/
+Support: support@hpc.ku.dk
+
+Login: 
+ssh -Y meyerbe@fend01.hpc.ku.dk
+>> alias 'ocean'
+
+ssh to any of the hosts 
+fend01.hpc.ku.dk
+fend02.hpc.ku.dk
+fend03.hpc.ku.dk
+fend04.hpc.ku.dk
+fend05.hpc.ku.dk
+
+Username: meyerbe
+
+upload / download data:
+scp -pr user@host1:from_path_file1 user@host2:to_path_file2
+
+example conv > HPC:  scp -pr meyerbe@convection:/conv2/meyerbe/coldpools/triple_3D/ColdPool_init_theta.png meyerbe@fend01.hpc.ku.dk:LES/data_cp/CP_dry_triple_3D
+
+example HPC > cond: scp -pr meyerbe@fend01.hpc.ku.dk:LES/pycles/Output.ColdPoolDry_triple_3D.440e9 ./
+
+
+
+If you need to update your list of IPs, connect to any
+frontend (eg. fendXX) and run the command:
+
+   hpc-setup-firewall.sh
+
+
+/groups/ocean/software/Modules/3.2.10/bin/add.modules
+adds to /groups/ocean/meyerbe/.cshrc, .login, .profile, .bashrc, .kshenv, .bash_profile
+Your old .cshrc, .login, .profile, .bashrc and .kshenv will be renamed to .login.old, .cshrc.old, .profile.old, .bashrc.old and .kshenv.old respectively.  So if you have any problems you will can easily restore them.
+>> .bashrc updated; had no 
+Processing your .bashrc (your old one is .bashrc.old)
+Cleaning .bashrc
+Adding alias or function lines at beginning of .bashrc
+You had no .kshenv as I see it.  Copying /groups/ocean/software/startup/etc/skel/.kshenv for you.
+/bin/cp: cannot stat `/groups/ocean/software/startup/etc/skel/.kshenv': No such file or directory
+You had no .login as I see it.  Copying /groups/ocean/software/startup/etc/skel/.login for you.
+/bin/cp: cannot stat `/groups/ocean/software/startup/etc/skel/.login': No such file or directory
+You had no .cshrc as I see it.  Copying /groups/ocean/software/startup/etc/skel/.cshrc for you.
+/bin/cp: cannot stat `/groups/ocean/software/startup/etc/skel/.cshrc': No such file or directory
+
+PyCLES
+https://github.com/meyerbe/pycles.git
+
+Compile
+on Laptop: CC=mpicc-mpich-mp python2.7 setup.py build_ext --inplace
+on HDC: CC=/groups/ocean/software/openmpi/gcc/2.0.1/bin/mpicc python setup.py build_ext --inplace
+
+
+>> where to save output? 
+>> where to save code?
+

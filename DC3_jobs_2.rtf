@@ -1,0 +1,471 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\froman\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f5\fnil\fprq2\fcharset0 Lohit Devanagari;}{\f6\fnil\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red127\green255\blue0;}
+{\stylesheet{\s0\snext0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057 Normal;}
+{\s15\sbasedon0\snext16\ql\widctlpar\hyphpar0\sb240\sa120\keepn\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f4\fs28 Heading;}
+{\s16\sbasedon0\snext16\sl288\slmult1\ql\widctlpar\hyphpar0\sb0\sa140\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24 Text Body;}
+{\s17\sbasedon16\snext17\sl288\slmult1\ql\widctlpar\hyphpar0\sb0\sa140\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24 List;}
+{\s18\sbasedon0\snext18\ql\widctlpar\hyphpar0\sb120\sa120\ltrpar\cf1\i\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24 Caption;}
+{\s19\sbasedon0\snext19\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24 Index;}
+}{\*\generator LibreOffice/5.3.6.1$Linux_X86_64 LibreOffice_project/30$Build-1}{\info{\creatim\yr2018\mo11\dy18\hr12\min51}{\revtim\yr2018\mo11\dy28\hr17\min13}{\printim\yr0\mo0\dy0\hr0\min0}}{\*\userprops}\deftab709
+\hyphauto0\viewscale100
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn11906\pghsxn16838\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\pgdscnxt0 Default Style;}}
+\formshade{\*\pgdscno0}\paperh16838\paperw11906\margl1134\margr1134\margt1134\margb1134\sectd\sbknone\sectunlocked1\pgndec\pgwsxn11906\pghsxn16838\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+{\*\ftnsep\chftnsep}\pgndec\pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+Nprocx = nprocy = }{\rtlch \ltrch\loch
+4}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+#SBATCH --nodes=1}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+#SBATCH --ntasks=16}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+#SBATCH \u8211\'96cpus-per-task=1}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch
+          }{\rtlch \ltrch\loch
+11687441     aegir pycles_t  meyerbe PD       0:00      1 (Resources)}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch
+          }{\rtlch \ltrch\loch
+11687436     aegir pycles_t  meyerbe  R       6:03      1 node176}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch
+          }{\rtlch \ltrch\loch
+11687434     aegir pycles_t  meyerbe  R       7:23      1 node175}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch
+          }{\rtlch \ltrch\loch
+11687432     aegir pycles_t  meyerbe  R       7:54      1 node174}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch
+          }{\rtlch \ltrch\loch
+11687430     aegir pycles_t  meyerbe  R       8:25      1 node173}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch
+          }{\rtlch \ltrch\loch
+11687429     aegir pycles_t  meyerbe  R       8:54      1 node172}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch
+          }{\rtlch \ltrch\loch
+11687428     aegir pycles_t  meyerbe  R       9:25      1 node171}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch
+          }{\rtlch \ltrch\loch
+11687427     aegir pycles_t  meyerbe  R       9:56      1 node170}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch
+          }{\rtlch \ltrch\loch
+11687425     aegir pycles_t  meyerbe  R      10:27      1 node166}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch
+          }{\rtlch \ltrch\loch
+11687422     aegir pycles_t  meyerbe  R      10:56      1 node164\tab \tab xx}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch
+          }{\rtlch \ltrch\loch
+11687440     aegir pycles_t  meyerbe  R       3:12      1 node180}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch
+          }{\rtlch \ltrch\loch
+11687439     aegir pycles_t  meyerbe  R       3:43      1 node179}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch
+          }{\rtlch \ltrch\loch
+11687438     aegir pycles_t  meyerbe  R       5:03      1 node178}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch
+          }{\rtlch \ltrch\loch
+11687437     aegir pycles_t  meyerbe  R       5:30      1 node177}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch
+ }
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\b\highlight7\ab\rtlch \ltrch\loch
+dTh: 2}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+[meyerbe@fend01 pycles]$ bash script_submit_CP_jobs.sh 2}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+#geometry parameters: 3}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\highlight4\rtlch \ltrch\loch
+parameters: z*2450, r*815 }{\highlight4\rtlch \ltrch\loch
+(to test)}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+setting CP parameters}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+generated namelist file}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+dTh2_z2450_r815}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+('namelist uuid:', u'3583c472-10a8-4a94-bc04-6c22eaee5658')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+Submitted batch job 11687436}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\highlight4\rtlch \ltrch\loch
+parameters: z*1225, r*1225 }{\highlight4\rtlch \ltrch\loch
+(to test)}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+setting CP parameters}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+generated namelist file}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+dTh2_z1225_r1225}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+('namelist uuid:', u'c094f190-280b-4be1-b8e0-06796ea68bad')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+Submitted batch job 11687437}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\highlight4\rtlch \ltrch\loch
+parameters: z*815, r*2450 }{\highlight4\rtlch \ltrch\loch
+(to test)}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+setting CP parameters}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+generated namelist file}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+dTh2_z815_r2450}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+('namelist uuid:', u'6794dcae-1354-4bf3-bc7a-19eb493b8777')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+Submitted batch job 11687438}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+finished bash script}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch
+ }
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\b\highlight7\ab\rtlch \ltrch\loch
+dTh: 3}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+[meyerbe@fend01 pycles]$ bash script_submit_CP_jobs.sh 3}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+#geometry parameters: 8}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\highlight4\rtlch \ltrch\loch
+parameters: z*2000, r*2000}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+setting CP parameters}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+generated namelist file}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+dTh3_z2000_r2000}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+('namelist uuid:', u'9925db53-5778-4b41-a8ce-8f6ef0a2f115')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+Submitted batch job 11687422}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\i\highlight6\ai\rtlch \ltrch\loch
+T = 3161.17268665 dt = 3.71713718322 cfl_max = 0.300325930457 walltime = 15.2415001392}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\i\highlight6\ai\rtlch \ltrch\loch
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\i\highlight6\ai\rtlch \ltrch\loch
+slurmstepd: error: *** STEP 11687422.0 ON node164 CANCELLED AT 2018-11-28T02:52:51 DUE TO TIME LIMIT ***}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\i\highlight6\ai\rtlch \ltrch\loch
+slurmstepd: error: *** JOB 11687422 ON node164 CANCELLED AT 2018-11-28T02:52:51 DUE TO TIME LIMIT ***}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\i\highlight6\ai\rtlch \ltrch\loch
+slurmstepd: error: Exceeded job memory limit at some point.}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ul\ulc0\highlight4\rtlch \ltrch\loch
+('namelist uuid:', u'b731f87b-c9ea-474a-a146-a82f769595cc')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\i\ul\ulc0\highlight4\ai\rtlch \ltrch\loch
+Submitted batch job 11686896}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\ul\ulc0\highlight4\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\highlight4\rtlch \ltrch\loch
+parameters: z*250, r*4000 }{\highlight4\rtlch \ltrch\loch
+(to test)}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+setting CP parameters}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+generated namelist file}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+dTh3_z250_r4000}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+('namelist uuid:', u'04b5523a-577d-4706-9526-51afd8fc2923')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+Submitted batch job 11687425}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+parameters: z*500, r*2000}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+setting CP parameters}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+generated namelist file}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+dTh3_z500_r2000}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\highlight4\rtlch \ltrch\loch
+('namelist uuid:', u'8eb63614-3b6d-4e4b-b10f-7850d478dd9f')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+Submitted batch job 11687427}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\highlight4\rtlch \ltrch\loch
+parameters: z*670, r*1500 }{\highlight4\rtlch \ltrch\loch
+(to test)}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+setting CP parameters}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+generated namelist file}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+dTh3_z670_r1500}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+('namelist uuid:', u'20b27cad-8023-4764-bf6a-1466aedc6dea')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+Submitted batch job 11687428}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\highlight4\rtlch \ltrch\loch
+parameters: z*1000, r*1000 }{\highlight4\rtlch \ltrch\loch
+(to test)}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+setting CP parameters}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+generated namelist file}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+dTh3_z1000_r1000}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+('namelist uuid:', u'135b7e17-b46c-46be-be24-a4cb887b1810')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+Submitted batch job 11687429}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\highlight4\rtlch \ltrch\loch
+parameters: z*1500, r*670 }{\highlight4\rtlch \ltrch\loch
+(to test)}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+setting CP parameters}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+generated namelist file}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+dTh3_z1500_r670}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+('namelist uuid:', u'0c016583-65b5-4109-ba0e-ceb21d7ae858')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+Submitted batch job 11687430}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\highlight4\rtlch \ltrch\loch
+parameters: z*2000, r*500 }{\highlight4\rtlch \ltrch\loch
+(to test)}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+setting CP parameters}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+generated namelist file}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+dTh3_z2000_r500}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+('namelist uuid:', u'8aaad9ea-f683-443a-9b98-d412e6430bbf')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+Submitted batch job 11687432}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\highlight4\rtlch \ltrch\loch
+parameters: z*4000, r*250 }{\highlight4\rtlch \ltrch\loch
+(to test)}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+setting CP parameters}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+generated namelist file}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+dTh3_z4000_r250}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+('namelist uuid:', u'b20311fb-5425-4567-995b-5f084d91aa18')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+Submitted batch job 11687434}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+finished bash script}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch
+ }
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch
+ }
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\b\ab\rtlch \ltrch\loch
+dTh: 4}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+#geometry parameters: 3}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\highlight4\rtlch \ltrch\loch
+parameters: z*430, r*1730 }{\highlight4\rtlch \ltrch\loch
+(to test)}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+setting CP parameters}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+generated namelist file}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+dTh4_z430_r1730}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+('namelist uuid:', u'4fa40078-1581-4a24-a80e-8994dd80f724')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+Submitted batch job 11687439}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\highlight4\rtlch \ltrch\loch
+parameters: z*870, r*870 }{\highlight4\rtlch \ltrch\loch
+(to test)}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+setting CP parameters}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+generated namelist file}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+dTh4_z870_r870}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+('namelist uuid:', u'a84d3ba1-c611-4893-87d6-10a6e328149d')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+Submitted batch job 11687440}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\highlight4\rtlch \ltrch\loch
+parameters: z*1730, r*430 }{\highlight4\rtlch \ltrch\loch
+(to test)}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+setting CP parameters}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+generated namelist file}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+dTh4_z1730_r430}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+('namelist uuid:', u'57797cf3-eb73-4e38-b260-870b6f548c4a')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+Submitted batch job 11687441}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch\loch
+finished bash script}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\brdrb\brdrs\brdrw20\brdrcf1\brsp42\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\i\ai\rtlch \ltrch\loch
+debugging\u8230\'85}{\rtlch \ltrch\loch
+.}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\rtlch \ltrch
+ }
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\b\ab\rtlch \ltrch\loch
+dTh: 3}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+parameters: z*2000, r*2000}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+setting CP parameters}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+generated namelist file}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+dTh3_z2000_r2000}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+('namelist uuid:', u'2ea9cd84-b542-497e-ab20-ccb11ed6352a')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+Submitted batch job 11686257}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+...}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+pressure solver initialize}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+start PressureFFTParallel.initialize}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+start PressureFFTParallel.initialize 1}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+start PressureFFTParallel.initialize 2}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+start PressureFFTParallel.initialize 3}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+start PressureFFTParallel.initialize 4}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+start PressureFFTParallel.initialize 5}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\ulnone\ulc0\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+commented out from line 538 >> same problem in Pressure (Pencil)}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+('namelist uuid:', u'ea03a4c7-ca52-4e55-8927-59d1b497d208')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+Submitted batch job 11686342}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\ulnone\ulc0\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+commented out from line 515 >> running}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+('namelist uuid:', u'549ab5b5-8d30-4c5b-8eac-9e8ad958633e')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\ulnone\ulc0\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+commented out from line 522 >> running}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+('namelist uuid:', u'cc5b67b1-dcb2-42ff-82be-08124f23cc8f')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\ulnone\ulc0\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+commented out from line 527 }{\ulnone\ulc0\rtlch \ltrch\loch
+(before \u8216\'91if r2 <= rstar2) }{\ulnone\ulc0\rtlch \ltrch\loch
+>> running}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+('namelist uuid:', u'dce61b12-5a37-41d5-8ed2-7bbc3232eb0b')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\ulnone\ulc0\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+commented out from line 536 }{\ulnone\ulc0\rtlch \ltrch\loch
+(incl. First if-statement for r2) >> running}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+('namelist uuid:', u'5d593bfe-da1d-4ce2-a741-68a1809f8c05')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\ulnone\ulc0\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+commented out from line 5}{\ulnone\ulc0\rtlch \ltrch\loch
+44 (incl. second if-statement for r2)}{\ulnone\ulc0\rtlch \ltrch\loch
+ }{\ulnone\ulc0\rtlch \ltrch\loch
+>> running}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+('namelist uuid:', u'5c02894e-a00c-4f83-a3bc-b1dd1fe12c31')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\ulnone\ulc0\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+commented out from line 552 (incl. Setting u, v, w) >> running}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+('namelist uuid:', u'953947a7-1aa4-4b09-b2bf-1c4b76d78930')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\ulnone\ulc0\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+commented out from line 571 (incl. Computeation of theta_z)}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+('namelist uuid:', u'1e8d7e85-caaf-464d-ae55-8daef61cdde0')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\ulnone\ulc0\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+all, without tracer initialization >> runs}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ul\ulc0\highlight4\rtlch \ltrch\loch
+('namelist uuid:', u'399746b8-5778-45b0-bf33-0a7979bea161')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ul\ulc0\highlight4\rtlch \ltrch\loch
+Submitted batch job 11686734}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\ulnone\ulc0\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+all, incl tracer}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+('namelist uuid:', u'b731f87b-c9ea-474a-a146-a82f769595cc')}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057{\ulnone\ulc0\rtlch \ltrch\loch
+Submitted batch job 11686896}
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\ulnone\ulc0\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\ul\ulc0\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\brdrb\brdrs\brdrw20\brdrcf1\brsp42\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par \pard\plain \s0\ql\widctlpar\hyphpar0\ltrpar\cf1\kerning1\dbch\af5\langfe1081\dbch\af6\afs24\alang2057\loch\f3\fs24\lang2057\rtlch \ltrch\loch
+
+\par }

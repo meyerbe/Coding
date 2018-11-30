@@ -1,0 +1,20 @@
+NCO = NetCDF Operators
+
+statisticians: ncra, nces, 
+concatenators: ncwa, ncrcat, ncecat
+>> ncrcat is designed for concatenating record variables, while ncecat is designed for concatenating fixed length variables. 
+
+(1) concatenate files: ncecat
+-----------------------------------
+ncecat *.nc merged-file.nc
+-----------------------------------
+aggregates an arbitrary number of input files into a single output file using using one  of  two  methods.
+Members of an ensemble may have no reason to contain a record dimension. ncecat will create a new record dimension (named record by default) with which to glue together the individual files into the single ensemble file.
+
+Record  AGgregation (RAG),  the  traditional  method  employed  on (flat) netCDF3 files and still the default method, stores input-files as consecutive records in the output-file.
+Group AGgregation (GAG) stores input-files as top-level groups in the netCDF4 output-file.
+
+A new record dimension is the glue which binds together the input file data.  
+
+
+(2) extract single variable
