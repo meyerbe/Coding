@@ -14,7 +14,33 @@ Members of an ensemble may have no reason to contain a record dimension. ncecat 
 Record  AGgregation (RAG),  the  traditional  method  employed  on (flat) netCDF3 files and still the default method, stores input-files as consecutive records in the output-file.
 Group AGgregation (GAG) stores input-files as top-level groups in the netCDF4 output-file.
 
-A new record dimension is the glue which binds together the input file data.  
+A new RECORD DIMENSION is the glue which binds together the input file data.  
+
+-----------------------------------
+correct time dimension: 
+for filename in *.nc; do
+  ncks -O --mk_rec_dmn time ${filename} ${filename}
+done
+
 
 
 (2) extract single variable
+cdo selvar foo file.nc foo.nc
+ncks -v u 100.nc u_100.nc
+
+(3) merge fields with variables
+ncks -h -A u_merged_t0_t3600_k1.nc v_merged_t0_t3600_k1.nc
+
+
+
+1. Adding a record dimension.
+
+What you should do, for the first file (and only the first file of your list of files to be concatened), is the following command :
+-------
+ncks -O --mk_rec_dmn time_dimension_name in.nc out.nc
+
+
+-----------------------------------
+Cut out Levels:
+
+-----------------------------------
